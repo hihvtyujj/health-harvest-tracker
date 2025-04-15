@@ -8,6 +8,7 @@ import WorkoutCard from '@/components/WorkoutCard';
 import ActivityChart from '@/components/ActivityChart';
 import ProgressCircle from '@/components/ProgressCircle';
 import LogWorkout from '@/components/LogWorkout';
+import DailyCaloriesCounter from '@/components/DailyCaloriesCounter';
 
 const Index: React.FC = () => {
   // Mock data
@@ -169,9 +170,10 @@ const Index: React.FC = () => {
             </Card>
           </div>
 
-          {/* Log Workout */}
-          <div className="lg:col-span-1">
+          {/* Log Workout and Daily Calories */}
+          <div className="lg:col-span-1 space-y-8">
             <LogWorkout />
+            <DailyCaloriesCounter />
           </div>
         </div>
       </div>
